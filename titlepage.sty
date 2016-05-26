@@ -1,0 +1,44 @@
+%
+%    redefines the \maketitle command
+%    by Urs Fässler
+%
+
+\makeatletter
+\def\maketitle{
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  {
+  \null
+  \thispagestyle{empty}
+
+  \begin{center}
+    
+	\Large{Natural Language Annotation}\\
+    \vspace*{1cm}
+    \huge\bfseries\@title\\
+    \vspace*{1cm}
+    \Large Students:\\
+	\vspace*{.5cm}
+    \large Felix Zhu\\
+    \large 15-907-835\\
+    \large @student.ethz.ch\\
+    \vspace*{.5cm}
+    \large Jakob Hasse\\
+    \large 15-907-835\\
+    \large hassej@student.ethz.ch\\
+	\vspace*{.5cm}
+    \large Qin Wang\\
+    \large 15-944-424\\
+    \large qwang@student.ethz.ch\\
+	\vspace*{.5cm}
+    \large Robert T\\
+    \large 15-907-835\\
+    \large @student.ethz.ch\\
+    \vspace*{1.5cm}
+    \@date
+  \end{center}
+      
+  \null
+  \cleardoublepage
+  }
+  }
+\makeatother
